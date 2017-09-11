@@ -1,5 +1,5 @@
 Flask
 Flask-B3
 Flask-Sleuth
-statsd
+python-statsd
 gunicorn

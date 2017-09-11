@@ -16,7 +16,9 @@ To run Influxdb, Telegraf and an example Python app that uses a statsd client:
     tick$ curl localhost:5555
     tick$ docker exec -it tick_influxdb_1 influx
     > use telegraf
-    > select * from "demo-counter"
+    > show measurements
+    > select * from request_frequency
+    > select * from status_418
 
 ## How it works
 
