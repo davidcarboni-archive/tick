@@ -22,7 +22,7 @@ To run Influxdb, Telegraf and an example Python app that uses a statsd client:
 
 To 'tail' the metric, you can go for a `while true`:
 
-    while [ true ]; do docker exec -it tick_influxdb_1 influx -database 'telegraf' -execute 'select * from status_418'; date; sleep 1; done
+    while [ true ]; do docker exec -it tick_influxdb_1 influx -database 'telegraf' -precision s -execute 'select * from status_418'; date; sleep 1; done
 
 ## How it works
 
