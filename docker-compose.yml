@@ -14,6 +14,6 @@ services:
     build: app
     environment:
       - FLASK_DEBUG=True
-      - TELEGRAF=telegraf
+      - STATSD=telegraf
     ports:
       - 5555:5000
